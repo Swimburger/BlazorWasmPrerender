@@ -3,12 +3,12 @@ If(Test-Path .\Prerender\output)
     Remove-Item -Path .\Prerender\output -Recurse
 }
 
-dotnet publish .\Client\BlazorWasmPrerender.csproj -c Release -o Prerender/output
+dotnet publish .\Client\BlazorWasmPrerender.csproj -c Release -o Prerender/output --nologo
 Push-Location .\Prerender
 npx react-snap
 Get-ChildItem ".\output\wwwroot\*.html" -Recurse | ForEach-Object { 
     (Get-Content -Path $_.FullName -Raw) `
-        -replace '<base href="/"','<base href="/GitHubPagesDemo/"' | `
+        -replace '<base href="/"','<base href="/BlazorWasmPrerender/"' | `
         Set-Content -Path $_.FullName
 }
 Pop-Location
