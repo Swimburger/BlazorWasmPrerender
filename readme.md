@@ -1,0 +1,1 @@
+Depending on which OS you try to run react-snap, you will need to make sure certain dependencies have been installed. You can find the list of dependencies on [Puppeteers troubleshooting guide](https://github.com/puppeteer/puppeteer/blob/main/docs/troubleshooting.md). (Puppeteer is the underlying chrome driver tech used by react-snap)
