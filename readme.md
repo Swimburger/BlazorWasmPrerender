@@ -1,1 +1,3 @@
+This repository contains the code to pre-render a Blazor WebAssembly application at build time and then deploy it to GitHub pages. To learn more, read "[Pre-render Blazor WebAssembly at build time to optimize for search engines](https://swimburger.net/blog/dotnet/pre-render-blazor-webassembly-at-build-time-to-optimize-for-search-engines)".
+
 Depending on which OS you try to run react-snap, you will need to make sure certain dependencies have been installed. You can find the list of dependencies on [Puppeteers troubleshooting guide](https://github.com/puppeteer/puppeteer/blob/main/docs/troubleshooting.md). (Puppeteer is the underlying chrome driver tech used by react-snap)
